@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Ubuntu;
+    background: #F0F0F5;
+}
+
+a{
+    margin: 2rem;
+}
+
+.information{
+    background: #076fa6;
+    color: white;
+    width: 80%;
+    display: flex;
+    margin: 80px auto 0;
+    border-radius: 0.8rem ;
+}
+
+.date h1{
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.date p{
+    line-height: 1.6rem;
+    padding: 0.4rem;
+}
+
+.shareLinks{
+    display: flex;
+}
+.shareLinks .curriculoLink{
+    width: 60%;
+    margin: 80px auto 0;
+    max-width: 280px;
+    height: 72px;
+    border-radius: 8px;
+    text-decoration: none;
+    align-items: center;
+    overflow: hidden;
+    margin-top: 15px;
+    background: #076fa6;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    transition: 0.4s;
+    margin-bottom: 2rem;
+}
+
+.shareLinks .curriculoLink:hover{
+    background: #6C6C80;
+}
+
+.shareLinks .curriculoLink span{
+    display: block;
+    background: rgba(0, 0, 0, 0.08);
+    width: 72px;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: backgroun-color 0.2s;
+}
+
+.shareLinks .curriculoLink span .fa-arrow-right:before{
+    color: #FFF;
+    width: 20px;
+    height: 20px;
+}
+
+.shareLinks .curriculoLink strong{
+    padding:  0 5rem;
+}
+
+.information figure img{
+    width: 150px;
+    height: auto;
+    margin: 1rem;
+    border-radius: 0.8rem;
+    margin-top: 4rem;
+}
+
+@media(max-width: 760px){
+    .information{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media(max-width: 565px){
+    .shareLinks{
+        flex-direction: column;
+    }
+    .shareLinks .curriculoLink{ 
+        margin-bottom: 0;
+    }
+
+    #spa{
+        margin-bottom: 1rem;
+    }
+}
+
+@media(max-width: 380px){
+    .shareLinks .curriculoLink{
+        width: 80%;
+    }
+}

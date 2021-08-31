@@ -1,0 +1,243 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Ubuntu, Arial, Helvetica, sans-serif;
+    background: #F0F0F5;
+}
+
+.menuHeader{
+    background: #076fa6;
+    padding: 2rem;
+    color: white;
+}
+
+.menuHeader .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menuHeader  .container .navigationMenu ul{
+    display: flex;
+}
+
+.menuHeader  .container .navigationMenu ul li{
+    list-style: none;
+}
+
+.menuHeader  .container .navigationMenu ul li a{
+    text-decoration: none;
+    color: white;
+    margin: 1rem;
+    transition: 0.4s;
+}
+
+.menuHeader  .container .navigationMenu ul li a:hover{
+    color: rgb(140, 138, 138);
+}
+
+/* menu mobile */
+.menuHeader  .container .navigationMenu #menuHamburgguerInput{
+    display: none;
+}
+
+.menuHeader  .container .navigationMenu .menuHamburgguerLabel{
+    display: none;
+    font-size: 1.8rem;
+    line-height: 5rem;
+    margin-right: 2.5rem;
+    float: right;
+}
+/* fim menu mobile */
+
+@media screen and (max-width: 760px){
+    .menuHeader  .container .navigationMenu .menuHamburgguerLabel{
+        display: block;
+    }
+
+    .menuHeader  .container .navigationMenu ul{
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 5rem;
+        left: -100%;
+        transition: 0.5s;
+        text-align: center;
+        background: #076fa6;
+    }
+
+    .menuHeader  .container .navigationMenu ul li{
+        display: block;
+        margin: 2.1rem;
+    }
+
+    .menuHeader  .container .navigationMenu ul li a{
+        font-size: 1.25rem;
+        line-height: 1.8rem;
+        text-decoration: none;
+    }
+
+    .menuHeader  .container .navigationMenu ul li a:hover{
+        color: rgb(140, 138, 138);
+    }
+    
+    .menuHeader  .container .navigationMenu ul{
+        display: flex;
+        flex-direction: column;
+        margin-top: 0.5rem;
+    }
+
+    #menuHamburgguerInput:checked ~ ul{
+        left: 0;
+    }
+}
+
+/* fim do menu */
+
+.content{
+    min-height: 100%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px auto 0;
+    flex-wrap: wrap;
+}
+
+.content .divOne{
+    /* width: 60%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px auto 0;
+    font-size: 3.0rem;
+    color: #322153;
+}
+
+.content .divOne h3 {
+    font-size: 1.5rem;
+    color: #6C6C80;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.content .divOne p{
+    font-size: 1.5rem;
+    color: #6C6C80;
+    font-weight: bold;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.content .divOne .links{
+    margin-top: 1rem;
+}
+
+.content .divOne .links a{
+    text-decoration: none;
+    color: #4e3c74;
+}
+
+.content .curriculoLink{
+    width: 100%;
+    max-width: 280px;
+    height: 72px;
+    border-radius: 8px;
+    text-decoration: none;
+    align-items: center;
+    overflow: hidden;
+    margin-top: 40px;
+    background: #076fa6;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    transition: 0.4s;
+    margin-bottom: 2rem;
+}
+
+.content .curriculoLink:hover{
+    background: #6C6C80;
+}
+
+.content .curriculoLink span{
+    display: block;
+    background: rgba(0, 0, 0, 0.08);
+    width: 72px;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: backgroun-color 0.2s;
+}
+
+.content .curriculoLink span .fa-arrow-right:before{
+    color: #FFF;
+    width: 20px;
+    height: 20px;
+}
+
+.content .curriculoLink strong{
+    padding:  0 5rem;
+}
+
+.content .figureIMG img{
+    width: 275px;
+    height: 260px;
+}
+
+h4{
+    margin-bottom: 1rem;
+}
+@media(max-width: 880px){
+    .content .figureIMG{
+        width: 60%;
+        margin-top: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 870px){
+    .content .figureIMG img{
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width: 785px){
+    .content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 870px){
+    h1{
+        font-size: 2rem;
+    }
+}
+
+@media(max-width: 380px){
+    .content .figureIMG img{
+        width: 150px;
+    }
+
+    .content .figureIMG{
+        width: 60%;
+    }
+
+    .content .curriculoLink{
+        max-width: 180px;
+        padding: 0;
+    }
+}

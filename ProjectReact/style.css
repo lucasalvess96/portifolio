@@ -1,0 +1,46 @@
+h1{
+    text-align: center;
+}
+
+.shareLinks .curriculoLink{
+    margin: 80px auto 0;
+    max-width: 280px;
+    height: 60px;
+    border-radius: 8px;
+    text-decoration: none;
+    align-items: center;
+    overflow: hidden;
+    margin-top: 15px;
+    background: #076fa6;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    transition: 0.4s;
+    margin-bottom: 2rem;
+}
+
+.shareLinks .curriculoLink:hover{
+    background: #6C6C80;
+}
+
+.shareLinks .curriculoLink span{
+    display: block;
+    background: rgba(0, 0, 0, 0.08);
+    width: 72px;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: backgroun-color 0.2s;
+}
+
+.shareLinks .curriculoLink span .fa-arrow-right:before{
+    color: #FFF;
+    width: 20px;
+    height: 20px;
+}
+
+.shareLinks .curriculoLink strong{
+    padding:  0 5rem;
+}
